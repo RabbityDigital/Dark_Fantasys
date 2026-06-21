@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cavaleiro Maalk - Dark Fantasy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <audio id="bg-music" src="Imagens/Golden Brown - The Stranglers (slowed + reverb) - etherealnightcore (youtube).mp3"
+        loop autoplay></audio>
+
+    <header class="hero-screen">
+        <div class="hero-bg">
+            <div class="overlay-gradient"></div>
+        </div>
+
+        <div class="container">
+            <aside class="sidebar">
+                <div class="logo">
+                    <span class="logo-icon">⚔️</span> LENDAS OBSCURAS
+                </div>
+
+                <h1 class="main-title">Cavaleiro<br>Maalk</h1>
+                <h2 class="subtitle">O CAVALEIRO DE ÉBANO</h2>
+
+                <p class="description">
+                    Forjado nas chamas frias de Aethelgard, Maalk não conhece a derrota. Sua lâmina, a 'Quebra-Votos',
+                    já ceifou exércitos e imperadores. Ele é a sombra que precede a tempestade, o último guardião do
+                    Trono de Cinzas.
+                </p>
+
+                <a href="#historia" class="btn primary-btn">LER HISTÓRIA</a>
+
+                <div class="stats-section">
+                    <h3 class="stats-title">ATRIBUTOS</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-value">998</span>
+                            <div class="circle white-circle"></div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">ALMAS<br>CEIFADAS</span>
+                            <div class="circle dark-circle"></div>
+                        </div>
+                    </div>
+
+                    <div class="stats-bottom">
+                        <div class="stat-detail">
+                            <span class="detail-val">48018</span>
+                            <span class="detail-lbl">INIMIGOS DERROTADOS</span>
+                        </div>
+                        <div class="stat-detail">
+                            <span class="detail-val">3S289</span>
+                            <span class="detail-lbl">DIAS DE GUERRA</span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </aside>
+
+        <!-- Código do Cavaleiro - coluna direita
+        <div class="hero-values">
+            <div class="valor-item">
+                <div class="valor-portrait">
+                    <svg class="valor-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="32" y1="8" x2="32" y2="56" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                        <line x1="12" y1="28" x2="52" y2="28" stroke="white" stroke-width="1.5"
+                            stroke-linecap="round" />
+                        <line x1="20" y1="8" x2="44" y2="8" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                        <circle cx="32" cy="56" r="3" fill="white" opacity="0.6" />
+                    </svg>
+                </div>
+                <div class="valor-text">
+                    <span class="valor-name">HONRA</span>
+                    <span class="valor-desc">NUNCA ATACA PELAS COSTAS</span>
+                </div>
+            </div>
+            <div class="valor-item">
+                <div class="valor-portrait">
+                    <svg class="valor-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M32 10 C32 10 20 22 20 34 C20 42 26 48 32 50 C38 48 44 42 44 34 C44 22 32 10 32 10Z"
+                            stroke="white" stroke-width="1.5" fill="none" />
+                        <path d="M26 36 C26 36 29 42 32 44 C35 42 38 36 38 36" stroke="white" stroke-width="1.2"
+                            fill="none" opacity="0.5" />
+                    </svg>
+                </div>
+                <div class="valor-text">
+                    <span class="valor-name">FORÇA</span>
+                    <span class="valor-desc">ESPÍRITO INABALÁVEL</span>
+                </div>
+            </div>
+             
+        <div class="valor-item">
+            <div class="valor-portrait">
+                <svg class="valor-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="16" y="16" width="32" height="32" rx="2" stroke="white" stroke-width="1.5" />
+                    <line x1="22" y1="26" x2="42" y2="26" stroke="white" stroke-width="1.2" opacity="0.6" />
+                    <line x1="22" y1="32" x2="36" y2="32" stroke="white" stroke-width="1.2" opacity="0.6" />
+                    <line x1="22" y1="38" x2="38" y2="38" stroke="white" stroke-width="1.2" opacity="0.6" />
+                    <path d="M38 14 L42 10 L54 22 L50 26" stroke="white" stroke-width="1.5" fill="none" />
+                </svg>
+            </div>
+            <div class="valor-text">
+                <span class="valor-name">ESTRATÉGIA</span>
+                <span class="valor-desc">A BATALHA VENCIDA ANTES DE COMEÇAR</span>
+            </div>
+        </div>
+        <div class="valor-item">
+            <div class="valor-portrait">
+                <svg class="valor-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="32" cy="24" r="10" stroke="white" stroke-width="1.5" />
+                    <path d="M22 24 Q22 18 32 14 Q42 18 42 24" stroke="white" stroke-width="1" opacity="0.4"
+                        fill="none" />
+                    <path d="M20 38 L28 30 M44 38 L36 30" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                    <line x1="16" y1="46" x2="48" y2="46" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                        opacity="0.4" />
+                    <path d="M26 42 C26 42 32 52 38 42" stroke="white" stroke-width="1.5" fill="none" opacity="0.7" />
+                </svg>
+            </div>
+            <div class="valor-text">
+                <span class="valor-name">VINGANÇA</span>
+                <span class="valor-desc">TODA DÍVIDA SERÁ COBRADA</span>
+            </div>
+        </div>
+        <div class="valor-item">
+            <div class="valor-portrait">
+                <svg class="valor-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 28 Q32 16 44 28" stroke="white" stroke-width="1.5" fill="none" />
+                    <path d="M20 36 Q32 24 44 36" stroke="white" stroke-width="1.5" fill="none" opacity="0.5" />
+                    <path d="M20 44 Q32 32 44 44" stroke="white" stroke-width="1.5" fill="none" opacity="0.25" />
+                </svg>
+            </div>
+            <div class="valor-text">
+                <span class="valor-name">SILÊNCIO</span>
+                <span class="valor-desc">O ATO FALA POR SI</span>
+            </div>
+        </div>
+        </div>
+-->
+        </div>
+    </header>
+
+    <section class="history-section content-section" id="historia">
+        <div class="section-container">
+            <h2 class="section-title">A Lenda de Maalk</h2>
+
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>As Terras de Vorn em Chamas</h3>
+                        <p>Antes de se tornar uma lenda, Maalk era um comandante honrado das Guardas do Norte, defensor
+                            das fronteiras de Vorn. Era respeitado por sua integridade e temido em combate. Tinha uma
+                            família, um juramento e um nome limpo. Mas a escuridão não respeita virtudes. A horda dos
+                            Lordes Sem Rosto desceu das montanhas negras e varreu cidades inteiras em uma única noite.
+                            Maalk viu sua terra arder, seus irmãos cair, e seus filhos serem levados pela cinça. Naquela
+                            noite, o homem que era morreu junto com tudo que amava.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>O Pacto de Sangue</h3>
+                        <p>Nos escombros da cidade de Kael'Drath, Maalk encontrou os emissários dos Lordes Sombrios —
+                            seres antigos que comercializavam poder por almas. A oferta era clara: sua alma imortal em
+                            troca de força suficiente para destruir quem destruiu tudo que ele amava. Sem hesitar, Maalk
+                            cortou a própria palma com um fragmento de osso de dragão e selou o pacto. Naquele instante,
+                            seus olhos perderam a cor. O calor de seu corpo se foi. E Maalk, o homem, deixou de existir
+                            para sempre.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>A Forja da Quebra-Votos</h3>
+                        <p>Guiado por demônios de forja nas profundezas de Malgrath, Maalk fundiu seus próprios ossos
+                            com o metal vivo das entranhas da terra. Sua armadura foi moldada com as costelas de Vreth,
+                            o dragão da corrupção, e sua lâmina foi mergulhada no Rio Styx por quarenta dias. A
+                            Quebra-Votos, assim batizada, não cortava apenas carne — ela dissolvia encantamentos,
+                            despedaçava juramentos e deixava as almas de seus alvos expostas ao vão eterno. Era a arma
+                            perfeita para um homem que havia trocado sua própria alma para empunhá-la.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>O Expurgo Implacável</h3>
+                        <p>Por quarenta anos, Maalk caminhou sozinho pelos campos de batalha como um ceifador de mundos.
+                            Ele destruiu o Império de Tharon em uma semana. Obliterou o Panteão dos Deuses Menores do
+                            leste em uma única batalha. Matou o Lich-Rei Vorthaan sem perder uma gota de sangue. Nenhum
+                            exército, mago, bestial ou deus conseguiu sequer arranhar sua armadura de ébano. Ele não era
+                            mais humano — era uma force cósmica, um equilíbrio invertido, o peso do mundo sobre uma
+                            única lâmina.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>A Solidão do Invencível</h3>
+                        <p>Depois de décadas de conquistas absolutas, Maalk começou a sentir algo que nenhuma batalha
+                            havia lhe ensinado: o vazio. Cada cidade que tomava ficava em silêncio. Nenhum inimigo
+                            ousava se opor mais. Seus aliados o temiam tanto quanto seus inimigos. Os Lordes Sombrios o
+                            usavam como ferramenta, mas jamais como igual. Ele percebeu que havia trocado uma vida por
+                            outra escravidão. Buscou, pela primeira vez em décadas, algo que os campos de guerra não
+                            podiam oferecer: conexão.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Seraphine, a Mulher de Névoa</h3>
+                        <p>Ela apareceu no porto de Irakveth como comerciante de relíquias antigas — bela, culta, com
+                            palavras afiadas como facas e olhos que pareciam guardar segredos antigos. Maalk, que havia
+                            resistido a todo tipo de magia, não soube resistir a ela. Por meses, ela foi a primeira
+                            coisa humana que havia tocado a camada gelada de seu peito. Ele baixou a guarda. Contou-lhe
+                            sobre o pacto, sobre Kael'Drath, sobre seus filhos mortos. Seraphine escutava com a
+                            paciência de quem planejava há muito tempo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="final-story-item">
+                <div class="skull-icon">💀</div>
+                <div class="final-content">
+                    <h3>A Queda Improvável</h3>
+                    <p>Na noite de lua negra, enquanto Maalk dormia pela primeira vez em décadas — um sono que ela mesma
+                        induzira com ervas antigas — Seraphine agiu. Ela era, na verdade, uma agente dos Lordes Sem
+                        Rosto, os mesmos que haviam incendiado Vorn anos atrás. Sua missão era simples: o que nenhum
+                        exército conseguira, uma mulher conseguiria. A lâmina de obsidiana entrou entre as costelas do
+                        Cavaleiro de Ébano, no único ponto que a armadura não cobria. O veneno que ela carregava não
+                        matou o corpo imediatamente — dissolveu o pacto. Sem o pacto, a alma de Maalk começou a ser
+                        consumida pelos Lordes Sombrios que ele havia servido. Ele morreu não em batalha, não sob gritos
+                        de guerra. Morreu em silêncio, traído pela única coisa que nunca havia aprendido a combater: a
+                        confiança.</p>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>A Lenda de Maalk nunca morre. &copy; 2026 Dark Fantasy</p>
+        <p class="footer-credits">Trabalho da Faculdade feito por Mauricio Lopes e João Pedro</p>
+    </footer>
+</body>
+
+</html>
